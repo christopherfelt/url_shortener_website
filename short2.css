@@ -1,0 +1,328 @@
+.grid{
+  display: grid;
+  /* border: 2px blue solid; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 72px / 6fr 1fr 6fr 1fr 6fr;
+}
+
+.a {
+  grid-area: 3 / 1 / span 2 / 2;
+}
+
+.b {
+  grid-column: 3/ 4;
+}
+
+.b1 {
+  grid-row: 1 / span 3;
+}
+
+.b2 {
+  grid-row: 4 / span 1;
+}
+
+.b3 {
+  grid-row: 5 / span 1;
+}
+
+.c {
+  grid-area: 3 / 5 / span 2 / 6;
+}
+
+.d {
+  grid-area: 6 / 1 / span 1 / 6;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
+.upheader {
+  position: relative;
+  /* vertical-align: bottom; */
+}
+
+/* Consider using justify-self/align-self  for header thing*/
+
+.header, h2, h3 {
+  font-family: "Times";
+
+}
+#github {
+  text-align: center;
+  color: white;
+  font-size: 140%;
+}
+
+.header {
+  border: solid black;
+  position: absolute;
+  bottom: 0;
+  left: 9%;
+  /* display: table-cell;
+  vertical-align: bottom; */
+
+  /* margin: auto; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 80%;
+  color: black;
+  background-color: white;
+  transition-duration: 1s;
+}
+
+.header:hover {
+  background-color: black;
+  color: white;
+}
+
+.header h2, .header h3 {
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 120px;
+  line-height: 50%;
+  margin-bottom: 0px;
+}
+
+.header h3 {
+  font-size: 56px;
+  line-height: 10%;
+  margin-top: 30;
+}
+
+.form {
+  /* border: solid black; */
+  text-align: center;
+  height: 50%;
+  padding-top: 5%;
+  padding-bottom: 0;
+}
+
+#txtbox {
+  font-size: 18pt;
+  height: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.button {
+  /* border: solid black; */
+  height: 25%;
+  position: relative;
+  width: 100%-2px;
+}
+
+/* .buttons {
+  position: absolute;
+  width: 300px;
+} */
+
+#shortenBut {
+  position: absolute;
+  left: 25%;
+  height: 100%;
+  width: 20%;
+  background-color: #ff0000;
+  color: white;
+  border: solid #ff0000;
+  border-radius: 10px;
+  font-family: "Times";
+  letter-spacing: 2px;
+  font-size: 140%;
+  padding: 0;
+
+}
+
+#expandBut {
+  position: absolute;
+  right: 25%;
+  height: 100%;
+  width: 20%;
+  background-color: #0066ff;
+  color: white;
+  border: solid #0066ff;
+  border-radius: 10px;
+  font-family: "Times";
+  letter-spacing: 2px;
+  font-size: 140%;
+  padding: 0;
+}
+
+#shortenBut, #expandBut {
+  transition-duration: 0.4s;
+}
+
+#shortenBut:hover {
+  background-color: white;
+  color: #ff0000;
+  font-family: "Times";
+  letter-spacing: 0px;
+  border-radius: 20px;
+}
+
+#expandBut:hover {
+  background-color: white;
+  color: #0066ff;
+  font-family: "Times";
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.urlbox {
+  box-sizing: border-box;
+  border: solid #9933ff;
+  border-radius: 10px;
+  height: 80%;
+  width: 60%;
+  background-color: #9933ff;
+  color: white;
+  margin-left: 20%;
+  font-size: 140%;
+  transition-duration: 0.4s;
+}
+
+.urltitle{
+  /* border: solid black; */
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  height: 25%
+}
+
+#urlreadout {
+  /* border: solid black; */
+  text-align: center;
+  height: 60%;
+}
+
+#urlreadout p {
+  margin-top: 5%;
+
+}
+
+.urlbox:hover {
+  background-color: #ffccff;
+  color: #9933ff;
+
+}
+
+
+
+.shortexample {
+  box-sizing: border-box;
+  border: solid white;
+  border-radius: 15px;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  /* padding-left: 10%; */
+  padding: 5%;
+}
+
+
+
+.shortexampletitle, .longexampletitle {
+  box-sizing: border-box;
+  border: solid darkgreen;
+  border-radius: 30px;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  padding-top: 6%;
+  font-size: 140%;
+  color: darkgreen;
+  background-color: lightgreen;
+}
+
+.shortexamplebox, .longexamplebox {
+  box-sizing: border-box;
+  border: solid darkgreen;
+  border-radius: 30px;
+  width: 100%;
+  height: 60%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 120%;
+  color: darkgreen;
+  background-color: lightgreen;
+}
+
+/* #shortexampleurl {
+  box-sizing: border-box;
+  border: solid black;
+  height: 100%;
+  padding-top: 10%;
+  font-size: 140%;
+} */
+
+.longexample {
+  box-sizing: border-box;
+  border: solid white;
+  border-radius: 15px;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  margin-right: 10%;
+  padding: 5%;
+  opacity: 10;
+}
+
+#opacity {
+  opacity: 0;
+  transition-duration: 5s;
+}
+
+#opacity:hover {
+  opacity: 1;
+}
+
+/* .longexampletitle {
+  box-sizing: border-box;
+  border: solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  padding-top: 6%;
+  font-size: 140%;
+}
+
+.longexamplebox {
+  box-sizing: border-box;
+  border: solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: 60%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 120%;
+} */
+
+
+.footer {
+  margin-top: .5%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer img {
+  margin-top: 0.1%;
+  width: 40px;
+  height: 40px;
+}
